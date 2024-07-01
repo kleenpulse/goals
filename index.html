@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tech Goals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="style/theme.css">
+  <link rel="stylesheet" href="style/utils.css">
+  <link rel="stylesheet" href="style/goals.css">
+  <link rel="stylesheet" href="style/scroll.css">
+  <script src="script/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Dark Mode Toggle -->
+  <input type="checkbox" class="hidden" data-testid="dark-mode-checkbox" id="dark-mode">
+
+  <!-- Main Container -->
+  <main data-testid="main-container">
+
+    <!-- Backgrounds -->
+    <div data-testid="dark__bg" class="dark__bg" class="fixed ">
+    </div>
+    <div data-testid="light__bg" class="light__bg h-screen fixed hide_on_dark">
+    </div>
+    <div class="overlay h-screen fixed hide_on_dark">
+    </div>
+
+    <!-- Dark Mode Toggle Switch-->
+    <label for="dark-mode" data-testid="dark-mode-label">
+      <span data-testid="dark__mode">DARK </span> <span data-testid="light__mode">LIGHT </span>MODE
+    </label>
+    <article data-testid="content" class="relative z-10 flex-col ">
+      <header data-testid="header" class="">
+        <h1>My Tech Goals for the Next 2 Years</h1>
+      </header>
+      <div class="w-full">
+
+        <section data-testid="background">
+          <h2>Background</h2>
+          <p>Slack Name: <span data-testid="slackDisplayName">Jon Smizz</span></p>
+          <p>Current Time: <span data-testid="currentTimeUTC"></span></p>
+          <p>Current Day: <span data-testid="currentDay"></span></p>
+          <p>Slack Email: <span data-testid="slackEmail">skyeparagon@gmail.com</span></p>
+
+          <p>Hi, I'm Jon Smizz, a passionate web developer currently honing my skills in Go, Bun, and Next.js. I'm
+            participating
+            in
+            the HNG Internship to grow my expertise and network with industry professionals.</p>
+        </section>
+      </div>
+
+      <div class="w-full">
+        <img data-testid="slackProfilePicture" src="assets/images/jon-smizz.png" class="max-w" />
+      </div>
+      <!-- Links -->
+      <div class="w-full flex-col center gap-2" data-links="true">
+        <h2>Useful Links</h2>
+        <div class="flex gap-2 w-full useful__links"><a href="http://hng.tech/learn" data-testid="hngLink"
+            target="_blank" rel="noopener noreferrer">HNG Link</a>
+          <a href="http://keyword.dog" data-testid="keywordLink" target="_blank" rel="noopener noreferrer">Keyword</a>
+          <a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink" target="_blank"
+            rel="noopener noreferrer">Scrape Any
+            Web</a>
+        </div>
+      </div>
+
+
+      <!-- Goals Section -->
+      <section data-testid="goals" class="flex-col center">
+        <div class="perspective">
+
+          <h2 data-testid="goals__title">Goals</h2>
+        </div>
+        <section class="goals__grid">
+          <!-- Grid Item 1-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Master advanced React and Next.js techniques:</h3>
+              <p>I aim to dive deep into advanced React and Next.js concepts, mastering server-side rendering, static
+                site generation,
+                and API integration.</p>
+            </div>
+          </div>
+          <!-- Grid Item 2-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Contribute to open-source projects:</h3>
+              <p>I plan to actively participate in open-source communities, contributing meaningful code and
+                collaborating with other
+                developers.</p>
+            </div>
+          </div>
+
+          <!-- Grid Item 3-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Build a portfolio of professional-grade applications:</h3>
+              <p>I will create a diverse portfolio showcasing my skills in frontend and backend development, focusing on
+                real-world
+                applications.</p>
+            </div>
+          </div>
+          <!-- Grid Item 4-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Learn backend technologies like Bun.js and Go:</h3>
+              <p>I intend to gain proficiency in backend development using Bun.js and Go, building scalable and robust
+                APIs.</p>
+            </div>
+          </div>
+          <!-- Grid Item 5-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Secure a full-time role as a full-stack developer:</h3>
+              <p>My ultimate goal is to land a full-time position as a full-stack developer, where I can apply my skills
+                and grow
+                professionally.</p>
+            </div>
+          </div>
+          <!-- Grid Item 6-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Stay updated with the latest tech trends and best practices:</h3>
+              <p>I will continuously educate myself on emerging technologies and industry best practices to stay
+                competitive and
+                innovative.</p>
+            </div>
+          </div>
+          <!-- Grid Item 7-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Enhance my knowledge of database management systems:</h3>
+              <p>I aim to deepen my understanding of both SQL and NoSQL databases, optimizing performance and
+                scalability
+                for
+                applications.</p>
+            </div>
+          </div>
+          <!-- Grid Item 8-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Develop strong problem-solving and debugging skills:</h3>
+              <p>I will focus on honing my problem-solving abilities and debugging techniques to efficiently tackle
+                complex technical
+                challenges.</p>
+            </div>
+          </div>
+          <!-- Grid Item 9-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Network with industry professionals and mentors:</h3>
+              <p>I plan to build a strong professional network, seeking mentorship and advice from experienced
+                developers
+                and tech
+                leaders.</p>
+            </div>
+          </div>
+          <!-- Grid Item 10-->
+          <div class="goal__item">
+            <div class="item__content">
+              <h3>Create and maintain a tech blog or personal website:</h3>
+              <p>I aim to document my learning journey and share my knowledge with others through a tech blog or
+                personal
+                website,
+                building an online presence.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="feed__footer   w-full grid-center ">
+        <h2>
+          Thats Pretty Much It!
+        </h2>
+        <footer data-testid="footer">
+          <p>Made with ❤️ <a href="https://github.com/kleenpulse" target="_blank">Jon Smizz</a></p>
+        </footer>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

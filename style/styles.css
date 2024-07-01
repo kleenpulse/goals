@@ -1,0 +1,146 @@
+:root {
+	--abel__font: "Abel", sans-serif;
+	--playfairDisplay__font: "Playfair Display", serif;
+	--orbitron__font: "Orbitron", sans-serif;
+
+	/* Light theme */
+	--c-light-text: #333;
+	--c-light-background: rgba(240, 240, 240, 0.524);
+	--c-light-interactive: mediumvioletred;
+	--c-link-light: rgb(16, 171, 255);
+	/* Dark Theme */
+	--c-link-dark: rgb(0, 251, 255);
+	--c-dark-text: #efefef;
+	--c-dark-background: #333;
+	--c-dark-interactive: rgb(255, 158, 2);
+
+	--transi: all 400ms;
+	--input__size: 30px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--abel__font);
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: clip;
+}
+main[data-testid="main-container"] {
+	padding-top: 4rem;
+
+	width: 100%;
+	margin-inline: auto;
+	overflow: scroll;
+	height: 100vh;
+	overflow-x: clip;
+}
+
+article[data-testid="content"] {
+	width: 100%;
+
+	gap: 2rem;
+	padding: 0.5rem;
+	align-items: center;
+	margin: 0 auto;
+
+	@media screen and (min-width: 600px) {
+		padding: 1rem;
+	}
+	@media screen and (min-width: 900px) {
+		max-width: 1200px;
+		gap: 3rem;
+	}
+}
+header[data-testid="header"] {
+	text-align: center;
+	padding: 1rem;
+	font-family: var(--orbitron__font);
+	text-transform: uppercase;
+	font-size: clamp(1rem, 2vw, 3rem);
+}
+
+a {
+	font-family: var(--orbitron__font);
+	text-transform: uppercase;
+	font-weight: 500;
+	&:hover {
+		text-decoration: underline;
+		text-underline-offset: 0.3rem;
+		opacity: 0.8;
+	}
+	&:active {
+		scale: 0.9;
+	}
+	@media screen and (min-width: 600px) {
+		letter-spacing: 2px;
+	}
+}
+.useful__links {
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding-inline: 10px;
+}
+
+h2,
+h3 {
+	text-transform: uppercase;
+	font-family: var(--orbitron__font);
+	letter-spacing: 2px;
+}
+p {
+	letter-spacing: 1.2px;
+}
+section[data-testid="background"] {
+	& p {
+		max-width: 800px;
+		margin-top: 1rem;
+	}
+	@media screen and (min-width: 600px) {
+		& h2 {
+			font-size: 1.5rem;
+		}
+		& p {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+}
+.feed__footer {
+	height: 50vh;
+	@media screen and (max-width: 450px) {
+		& h2 {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	section {
+		margin: 1rem;
+		padding: 0.5rem;
+	}
+
+	li {
+		padding: 0.25rem;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 0.2px;
+}
+
+::selection {
+	color: var(--c-select);
+	background: var(--c-interactive);
+}

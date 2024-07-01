@@ -1,0 +1,61 @@
+.hidden {
+	opacity: 0;
+	display: none;
+}
+.relative {
+	position: relative;
+}
+.fixed {
+	position: fixed;
+}
+.h-screen {
+	height: 100vh;
+}
+.grid-center {
+	place-items: center;
+	display: grid;
+}
+.z-10 {
+	z-index: 10;
+}
+h1,
+h2 {
+	margin-top: 0;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+.flex {
+	display: flex;
+}
+.perspective {
+	perspective: 1000px;
+}
+.w-full {
+	width: 100%;
+}
+.max-w {
+	max-width: 100%;
+}
+.center {
+	align-items: center;
+}
+.gap-1 {
+	gap: 1rem;
+}
+.gap-2 {
+	gap: 2rem;
+}
+
+.gap-3 {
+	gap: 3rem;
+}
+
+.gap-4 {
+	gap: 4rem;
+}
+
+.gap-5 {
+	gap: 5rem;
+}
