@@ -32,6 +32,26 @@ body {
 	width: 100%;
 	overflow: clip;
 }
+.welcome {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	background: #000;
+	z-index: 9999;
+	color: white;
+}
+.hide-welcome {
+	animation: hide-welcome 1s 0.3s forwards;
+}
+
+@keyframes hide-welcome {
+	to {
+		transform: translateY(-100%);
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
 main[data-testid="main-container"] {
 	padding-top: 4rem;
 
