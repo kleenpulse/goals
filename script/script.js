@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
 
 console.log(dataDay)
 function updateUTCTime() {
-    const time = new Date().getTime();
+    const time = new Date()
     let currentUTCTime = time.toUTCString();
     dataTime.textContent = currentUTCTime
 }
@@ -46,7 +46,7 @@ updateUTCTime();
 updateUTCDay();
 
 // Update the time every second
-setInterval(updateUTCTime, 1000);
+setInterval(updateUTCTime, 100);
 
 
 
