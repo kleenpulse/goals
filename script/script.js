@@ -46,7 +46,7 @@ updateUTCTime();
 updateUTCDay();
 
 // Update the time every second
-setInterval(updateUTCTime, 100);
+setInterval(updateUTCTime, 1000);
 
 
 
