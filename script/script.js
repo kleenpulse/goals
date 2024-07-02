@@ -30,7 +30,8 @@ window.addEventListener("load", function () {
 console.log(dataDay)
 function updateUTCTime() {
     const time = new Date().getTime();
-    dataTime.textContent = time.toUTCString()
+    let currentUTCTime = time.toUTCString();
+    dataTime.textContent = currentUTCTime
 }
 function updateUTCDay() {
     const options = {
